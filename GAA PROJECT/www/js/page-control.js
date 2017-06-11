@@ -1,7 +1,7 @@
 myApp.onPageInit('home', function (page) {
 
-var auth=getTokenId(page.name);
-console.log(auth);
+// var auth=getTokenId(page.name);
+// console.log(auth);
 
 });
 // home
@@ -46,20 +46,22 @@ myApp.onPageInit('register',function(page) {
 
 
 myApp.onPageInit('login',function(page) {
-	$$(page.container).find('#button-login').click(function(){
-		var  data={};
-		data['id']=$$(page.container).find('#id').val();
-		data['password']=$$(page.container).find('#password').val();
+	// $$(page.container).find('#button-login').click(function(){
+	// 	var  data={};
+	// 	data['id']=$$(page.container).find('#id').val();
+	// 	data['password']=$$(page.container).find('#password').val();
 
-		$.post(server+'/login',{data},function(data){
-			if(data.signal_err==undefined){
-				console.log(data);
+	// 	$.post(server+'/login',{data},function(data){
+	// 		if(data.signal_err==undefined){
+	// 			console.log(data);
 
-			}else{
-				myApp.alert(data.message);
-			}
-		})
-	});
+	// 		}else{
+	// 			myApp.alert(data.message);
+	// 		}
+	// 	})
+	// });
+
+	window.location='/index.html';
 
 
 });
