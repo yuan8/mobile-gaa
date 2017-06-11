@@ -2,8 +2,12 @@ myApp.onPageInit('home', function (page) {
 
 // var auth=getTokenId(page.name);
 // console.log(auth);
+	console.log(page.name);
 
 });
+
+
+
 // home
 
 

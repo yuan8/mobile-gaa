@@ -148,3 +148,17 @@ function getTokenIdAll(){
 	
 }
 
+function panelmenu(){
+       $$('.open-left-panel').on('click', function (e) {
+         // 'left' position to open Left panel
+
+         myApp.openPanel('left');
+     });
+
+  
+}
+
+function panelLink(link){
+ viewHome.router.loadPage(link);
+ myApp.closePanel('left');
+}

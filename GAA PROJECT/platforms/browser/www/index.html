@@ -32,6 +32,7 @@
     <link rel="stylesheet" type="text/css" href="entitas/framework7/css/framework7.material.css">
     <link rel="stylesheet" type="text/css" href="entitas/framework7/css/framework7.material.colors.css">
     <link rel="stylesheet" type="text/css" href="entitas/framework7/css/material-icons.css">
+    <link rel="stylesheet" type="text/css" href="/entitas/app/index.css">
 
     <title>Gaa Project</title>
 </head>
@@ -43,27 +44,10 @@
     <div class="panel-overlay"></div>
 
     <div class="panel panel-left panel-reveal">
-        <div class="view navbar-fixed">
+        <div class="view navbar-fixed" id="panel-left" >
             <div class="pages">
-                <div data-page="panel-left" class="page">
-                    <div class="page-content" style="padding-top: 0px;">
-                        <div class="content-block menu-font">
-                            <div class="list-block">
-                                <ul>
-                                    <li>
-                                        <a href="pages/panel-complaint.html" class="item-link item-content panel-link"  id="panel-complaint">
-                                            <div class="item-media">
-                                                <i class="icon material-icons">message</i>
-                                            </div>
-                                            <div class="item-inner">
-                                                <div class="item-title">COMPLAINT</div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div  class="page">
+                   
                 </div>
             </div>
         </div>
@@ -127,7 +111,13 @@
     <script type="text/javascript" src="js/build.js"></script>
     <script type="text/javascript" src="js/functionity.js"></script>
     <script type="text/javascript" src="js/page-control.js"></script>
-   
+
+    <!-- controlling page -->
+    <script type="text/javascript" src="controller/all-project.js"></script>
+    <script type="text/javascript" src="controller/detail-project.js"></script>
+    <script type="text/javascript" src="controller/panel-design.js"></script>
+    <script type="text/javascript" src="controller/detail-img.js"></script>
+    <script type="text/javascript" src="controller/img-comment.js"></script>
 
 
 

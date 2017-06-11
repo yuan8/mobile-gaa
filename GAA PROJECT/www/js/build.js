@@ -3,7 +3,7 @@ var view_layer="view-home";
 var myApp = new Framework7({
     modalTitle: 'Gaa Project',
     material: true,
-    pushState: true,
+    // pushState: true,
     materialPageLoadDelay:500,
     cacheIgnoreGetParameters:true,
      onAjaxStart: function (xhr) {
@@ -44,7 +44,15 @@ var viewOption = myApp.addView('#view-option',{
 });
 
 
+var viewPanelLeft = myApp.addView('#panel-left',{
+    animatePages:true,
+    preloadPreviousPage:true,
+    // domCache:true
+
+});
+
 // load page main
+viewPanelLeft.router.loadPage('left-menu/related.html');
 viewOption.router.loadPage('pages/option/option-index.html');
 viewHome.router.loadPage('pages/home/home-index.html');
 viewProfile.router.loadPage('pages/profile/profile-index.html');
